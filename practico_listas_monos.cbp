@@ -33,15 +33,22 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="lib/agregar_frente.hpp" />
+		<Unit filename="lib/avanzar.hpp" />
+		<Unit filename="lib/buscar.hpp" />
 		<Unit filename="lib/eliminar_frente.hpp" />
+		<Unit filename="lib/eliminar_lista.hpp" />
 		<Unit filename="lib/eliminar_nodo.hpp" />
 		<Unit filename="lib/eliminar_valor.hpp" />
+		<Unit filename="lib/lista_es_vacia.hpp" />
+		<Unit filename="lib/lugar.hpp" />
 		<Unit filename="lib/mostrar_lista.hpp" />
 		<Unit filename="lib/nodo.hpp" />
+		<Unit filename="lib/ocurrencias.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

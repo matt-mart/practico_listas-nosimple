@@ -1,7 +1,7 @@
 
 ////////////////////////////////////////////////////////////////
 
-NODO* Eliminar_Frente (
+inline NODO* Eliminar_Frente (
   NODO* _raiz
 ){
 

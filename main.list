@@ -1,0 +1,519 @@
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 1
+
+
+   1              		.file	"main.cpp"
+   2              		.intel_syntax noprefix
+   3              		.text
+   4              		.def	___tcf_0;	.scl	3;	.type	32;	.endef
+   5              	___tcf_0:
+   6              	LFB1903:
+   7              		.cfi_startproc
+   8 0000 B9000000 		mov	ecx, OFFSET FLAT:__ZStL8__ioinit
+   8      00
+   9 0005 E9000000 		jmp	__ZNSt8ios_base4InitD1Ev
+   9      00
+  10              		.cfi_endproc
+  11              	LFE1903:
+  12              		.section .rdata,"dr"
+  13              	LC0:
+  14 0000 3B2000   		.ascii "; \0"
+  15              		.text
+  16              		.globl	__Z13Mostrar_ListaP4NODO
+  17              		.def	__Z13Mostrar_ListaP4NODO;	.scl	2;	.type	32;	.endef
+  18              	__Z13Mostrar_ListaP4NODO:
+  19              	LFB1466:
+  20              		.cfi_startproc
+  21 000a 53       		push	ebx
+  22              		.cfi_def_cfa_offset 8
+  23              		.cfi_offset 3, -8
+  24 000b 83EC18   		sub	esp, 24
+  25              		.cfi_def_cfa_offset 32
+  26 000e 8B5C2420 		mov	ebx, DWORD PTR [esp+32]
+  27 0012 85DB     		test	ebx, ebx
+  28 0014 7431     		je	L2
+  29              	L8:
+  30 0016 8B03     		mov	eax, DWORD PTR [ebx]
+  31 0018 890424   		mov	DWORD PTR [esp], eax
+  32 001b B9000000 		mov	ecx, OFFSET FLAT:__ZSt4cout
+  32      00
+  33 0020 E8000000 		call	__ZNSolsEi
+  33      00
+  34              		.cfi_def_cfa_offset 28
+  35 0025 83EC04   		sub	esp, 4
+  36              		.cfi_def_cfa_offset 32
+  37 0028 C7442408 		mov	DWORD PTR [esp+8], 2
+  37      02000000 
+  38 0030 C7442404 		mov	DWORD PTR [esp+4], OFFSET FLAT:LC0
+  38      00000000 
+  39 0038 890424   		mov	DWORD PTR [esp], eax
+  40 003b E8000000 		call	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+  40      00
+  41 0040 8B5B04   		mov	ebx, DWORD PTR [ebx+4]
+  42 0043 85DB     		test	ebx, ebx
+  43 0045 75CF     		jne	L8
+  44              	L2:
+  45 0047 83C418   		add	esp, 24
+  46              		.cfi_def_cfa_offset 8
+  47 004a 5B       		pop	ebx
+  48              		.cfi_restore 3
+  49              		.cfi_def_cfa_offset 4
+  50 004b C3       		ret
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 2
+
+
+  51              		.cfi_endproc
+  52              	LFE1466:
+  53              		.globl	__Z13ELiminar_NodoP4NODOS0_
+  54              		.def	__Z13ELiminar_NodoP4NODOS0_;	.scl	2;	.type	32;	.endef
+  55              	__Z13ELiminar_NodoP4NODOS0_:
+  56              	LFB1467:
+  57              		.cfi_startproc
+  58 004c 56       		push	esi
+  59              		.cfi_def_cfa_offset 8
+  60              		.cfi_offset 6, -8
+  61 004d 53       		push	ebx
+  62              		.cfi_def_cfa_offset 12
+  63              		.cfi_offset 3, -12
+  64 004e 83EC14   		sub	esp, 20
+  65              		.cfi_def_cfa_offset 32
+  66 0051 8B5C2420 		mov	ebx, DWORD PTR [esp+32]
+  67 0055 8B542424 		mov	edx, DWORD PTR [esp+36]
+  68 0059 85D2     		test	edx, edx
+  69 005b 7422     		je	L15
+  70 005d 8B7204   		mov	esi, DWORD PTR [edx+4]
+  71              	L13:
+  72 0060 C7442404 		mov	DWORD PTR [esp+4], 8
+  72      08000000 
+  73 0068 891424   		mov	DWORD PTR [esp], edx
+  74 006b E8000000 		call	__ZdlPvj
+  74      00
+  75 0070 85DB     		test	ebx, ebx
+  76 0072 7403     		je	L12
+  77 0074 897304   		mov	DWORD PTR [ebx+4], esi
+  78              	L12:
+  79 0077 89F0     		mov	eax, esi
+  80 0079 83C414   		add	esp, 20
+  81              		.cfi_remember_state
+  82              		.cfi_def_cfa_offset 12
+  83 007c 5B       		pop	ebx
+  84              		.cfi_restore 3
+  85              		.cfi_def_cfa_offset 8
+  86 007d 5E       		pop	esi
+  87              		.cfi_restore 6
+  88              		.cfi_def_cfa_offset 4
+  89 007e C3       		ret
+  90              	L15:
+  91              		.cfi_restore_state
+  92 007f 31F6     		xor	esi, esi
+  93 0081 EBDD     		jmp	L13
+  94              		.cfi_endproc
+  95              	LFE1467:
+  96              		.globl	__Z14Eliminar_ValorP4NODOi
+  97              		.def	__Z14Eliminar_ValorP4NODOi;	.scl	2;	.type	32;	.endef
+  98              	__Z14Eliminar_ValorP4NODOi:
+  99              	LFB1469:
+ 100              		.cfi_startproc
+ 101 0083 55       		push	ebp
+ 102              		.cfi_def_cfa_offset 8
+ 103              		.cfi_offset 5, -8
+ 104 0084 57       		push	edi
+ 105              		.cfi_def_cfa_offset 12
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 3
+
+
+ 106              		.cfi_offset 7, -12
+ 107 0085 56       		push	esi
+ 108              		.cfi_def_cfa_offset 16
+ 109              		.cfi_offset 6, -16
+ 110 0086 53       		push	ebx
+ 111              		.cfi_def_cfa_offset 20
+ 112              		.cfi_offset 3, -20
+ 113 0087 83EC1C   		sub	esp, 28
+ 114              		.cfi_def_cfa_offset 48
+ 115 008a 8B7C2430 		mov	edi, DWORD PTR [esp+48]
+ 116 008e 8B5C2434 		mov	ebx, DWORD PTR [esp+52]
+ 117 0092 85FF     		test	edi, edi
+ 118 0094 7438     		je	L21
+ 119 0096 8B5704   		mov	edx, DWORD PTR [edi+4]
+ 120 0099 85D2     		test	edx, edx
+ 121 009b 742D     		je	L22
+ 122 009d 89FE     		mov	esi, edi
+ 123 009f EB09     		jmp	L24
+ 124              	L25:
+ 125 00a1 89D6     		mov	esi, edx
+ 126 00a3 8B5204   		mov	edx, DWORD PTR [edx+4]
+ 127 00a6 85D2     		test	edx, edx
+ 128 00a8 7420     		je	L22
+ 129              	L24:
+ 130 00aa 391A     		cmp	DWORD PTR [edx], ebx
+ 131 00ac 75F3     		jne	L25
+ 132 00ae 8B6A04   		mov	ebp, DWORD PTR [edx+4]
+ 133 00b1 C7442404 		mov	DWORD PTR [esp+4], 8
+ 133      08000000 
+ 134 00b9 891424   		mov	DWORD PTR [esp], edx
+ 135 00bc E8000000 		call	__ZdlPvj
+ 135      00
+ 136 00c1 896E04   		mov	DWORD PTR [esi+4], ebp
+ 137 00c4 89EA     		mov	edx, ebp
+ 138 00c6 85D2     		test	edx, edx
+ 139 00c8 75E0     		jne	L24
+ 140              	L22:
+ 141 00ca 3B1F     		cmp	ebx, DWORD PTR [edi]
+ 142 00cc 740A     		je	L37
+ 143              	L21:
+ 144 00ce 89F8     		mov	eax, edi
+ 145 00d0 83C41C   		add	esp, 28
+ 146              		.cfi_remember_state
+ 147              		.cfi_def_cfa_offset 20
+ 148 00d3 5B       		pop	ebx
+ 149              		.cfi_restore 3
+ 150              		.cfi_def_cfa_offset 16
+ 151 00d4 5E       		pop	esi
+ 152              		.cfi_restore 6
+ 153              		.cfi_def_cfa_offset 12
+ 154 00d5 5F       		pop	edi
+ 155              		.cfi_restore 7
+ 156              		.cfi_def_cfa_offset 8
+ 157 00d6 5D       		pop	ebp
+ 158              		.cfi_restore 5
+ 159              		.cfi_def_cfa_offset 4
+ 160 00d7 C3       		ret
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 4
+
+
+ 161              	L37:
+ 162              		.cfi_restore_state
+ 163 00d8 8B5F04   		mov	ebx, DWORD PTR [edi+4]
+ 164 00db C7442404 		mov	DWORD PTR [esp+4], 8
+ 164      08000000 
+ 165 00e3 893C24   		mov	DWORD PTR [esp], edi
+ 166 00e6 E8000000 		call	__ZdlPvj
+ 166      00
+ 167 00eb 89DF     		mov	edi, ebx
+ 168 00ed 89F8     		mov	eax, edi
+ 169 00ef 83C41C   		add	esp, 28
+ 170              		.cfi_def_cfa_offset 20
+ 171 00f2 5B       		pop	ebx
+ 172              		.cfi_restore 3
+ 173              		.cfi_def_cfa_offset 16
+ 174 00f3 5E       		pop	esi
+ 175              		.cfi_restore 6
+ 176              		.cfi_def_cfa_offset 12
+ 177 00f4 5F       		pop	edi
+ 178              		.cfi_restore 7
+ 179              		.cfi_def_cfa_offset 8
+ 180 00f5 5D       		pop	ebp
+ 181              		.cfi_restore 5
+ 182              		.cfi_def_cfa_offset 4
+ 183 00f6 C3       		ret
+ 184              		.cfi_endproc
+ 185              	LFE1469:
+ 186              		.globl	__Z14Eliminar_ListaP4NODO
+ 187              		.def	__Z14Eliminar_ListaP4NODO;	.scl	2;	.type	32;	.endef
+ 188              	__Z14Eliminar_ListaP4NODO:
+ 189              	LFB1470:
+ 190              		.cfi_startproc
+ 191 00f7 53       		push	ebx
+ 192              		.cfi_def_cfa_offset 8
+ 193              		.cfi_offset 3, -8
+ 194 00f8 83EC18   		sub	esp, 24
+ 195              		.cfi_def_cfa_offset 32
+ 196 00fb 8B442420 		mov	eax, DWORD PTR [esp+32]
+ 197 00ff 85C0     		test	eax, eax
+ 198 0101 7419     		je	L44
+ 199              	L42:
+ 200 0103 8B5804   		mov	ebx, DWORD PTR [eax+4]
+ 201 0106 C7442404 		mov	DWORD PTR [esp+4], 8
+ 201      08000000 
+ 202 010e 890424   		mov	DWORD PTR [esp], eax
+ 203 0111 E8000000 		call	__ZdlPvj
+ 203      00
+ 204 0116 89D8     		mov	eax, ebx
+ 205 0118 85DB     		test	ebx, ebx
+ 206 011a 75E7     		jne	L42
+ 207              	L44:
+ 208 011c 31C0     		xor	eax, eax
+ 209 011e 83C418   		add	esp, 24
+ 210              		.cfi_def_cfa_offset 8
+ 211 0121 5B       		pop	ebx
+ 212              		.cfi_restore 3
+ 213              		.cfi_def_cfa_offset 4
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 5
+
+
+ 214 0122 C3       		ret
+ 215              		.cfi_endproc
+ 216              	LFE1470:
+ 217              		.globl	__Z5LugarP4NODOi
+ 218              		.def	__Z5LugarP4NODOi;	.scl	2;	.type	32;	.endef
+ 219              	__Z5LugarP4NODOi:
+ 220              	LFB1471:
+ 221              		.cfi_startproc
+ 222 0123 8B542404 		mov	edx, DWORD PTR [esp+4]
+ 223 0127 8B4C2408 		mov	ecx, DWORD PTR [esp+8]
+ 224 012b 85D2     		test	edx, edx
+ 225 012d 7416     		je	L51
+ 226 012f 31C0     		xor	eax, eax
+ 227 0131 3B0A     		cmp	ecx, DWORD PTR [edx]
+ 228 0133 7506     		jne	L49
+ 229 0135 EB14     		jmp	L46
+ 230              	L50:
+ 231 0137 390A     		cmp	DWORD PTR [edx], ecx
+ 232              		.p2align 4,,5
+ 233 0139 7410     		je	L46
+ 234              	L49:
+ 235 013b 83C001   		add	eax, 1
+ 236 013e 8B5204   		mov	edx, DWORD PTR [edx+4]
+ 237 0141 85D2     		test	edx, edx
+ 238 0143 75F2     		jne	L50
+ 239              	L51:
+ 240 0145 B8FFFFFF 		mov	eax, -1
+ 240      FF
+ 241 014a C3       		ret
+ 242              	L46:
+ 243 014b C3       		ret
+ 244              		.cfi_endproc
+ 245              	LFE1471:
+ 246              		.globl	__Z11OcurrenciasP4NODOi
+ 247              		.def	__Z11OcurrenciasP4NODOi;	.scl	2;	.type	32;	.endef
+ 248              	__Z11OcurrenciasP4NODOi:
+ 249              	LFB1473:
+ 250              		.cfi_startproc
+ 251 014c 53       		push	ebx
+ 252              		.cfi_def_cfa_offset 8
+ 253              		.cfi_offset 3, -8
+ 254 014d 8B542408 		mov	edx, DWORD PTR [esp+8]
+ 255 0151 8B5C240C 		mov	ebx, DWORD PTR [esp+12]
+ 256 0155 31C0     		xor	eax, eax
+ 257 0157 85D2     		test	edx, edx
+ 258 0159 7410     		je	L53
+ 259              	L56:
+ 260 015b 31C9     		xor	ecx, ecx
+ 261 015d 391A     		cmp	DWORD PTR [edx], ebx
+ 262 015f 0F94C1   		sete	cl
+ 263 0162 01C8     		add	eax, ecx
+ 264 0164 8B5204   		mov	edx, DWORD PTR [edx+4]
+ 265 0167 85D2     		test	edx, edx
+ 266 0169 75F0     		jne	L56
+ 267              	L53:
+ 268 016b 5B       		pop	ebx
+ 269              		.cfi_restore 3
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 6
+
+
+ 270              		.cfi_def_cfa_offset 4
+ 271 016c C3       		ret
+ 272              		.cfi_endproc
+ 273              	LFE1473:
+ 274              		.globl	__Z7AvanzarP4NODOi
+ 275              		.def	__Z7AvanzarP4NODOi;	.scl	2;	.type	32;	.endef
+ 276              	__Z7AvanzarP4NODOi:
+ 277              	LFB1474:
+ 278              		.cfi_startproc
+ 279 016d 8B542408 		mov	edx, DWORD PTR [esp+8]
+ 280 0171 8B442404 		mov	eax, DWORD PTR [esp+4]
+ 281 0175 85D2     		test	edx, edx
+ 282 0177 7409     		je	L63
+ 283              	L62:
+ 284 0179 8B4004   		mov	eax, DWORD PTR [eax+4]
+ 285 017c 83EA01   		sub	edx, 1
+ 286 017f 75F8     		jne	L62
+ 287 0181 C3       		ret
+ 288              	L63:
+ 289              		.p2align 4,,6
+ 290 0182 C3       		ret
+ 291              		.cfi_endproc
+ 292              	LFE1474:
+ 293              		.def	___main;	.scl	2;	.type	32;	.endef
+ 294 0183 90909090 		.section .rdata,"dr"
+ 294      90909090 
+ 294      90909090 
+ 294      90
+ 295              	LC1:
+ 296 0003 0A00     		.ascii "\12\0"
+ 297 0005 000000   		.section	.text.startup,"x"
+ 298              		.globl	_main
+ 299              		.def	_main;	.scl	2;	.type	32;	.endef
+ 300              	_main:
+ 301              	LFB1475:
+ 302              		.cfi_startproc
+ 303 0000 8D4C2404 		lea	ecx, [esp+4]
+ 304              		.cfi_def_cfa 1, 0
+ 305 0004 83E4F0   		and	esp, -16
+ 306 0007 FF71FC   		push	DWORD PTR [ecx-4]
+ 307 000a 55       		push	ebp
+ 308              		.cfi_escape 0x10,0x5,0x2,0x75,0
+ 309 000b 89E5     		mov	ebp, esp
+ 310 000d 56       		push	esi
+ 311 000e 53       		push	ebx
+ 312 000f 51       		push	ecx
+ 313              		.cfi_escape 0xf,0x3,0x75,0x74,0x6
+ 314              		.cfi_escape 0x10,0x6,0x2,0x75,0x7c
+ 315              		.cfi_escape 0x10,0x3,0x2,0x75,0x78
+ 316 0010 83EC1C   		sub	esp, 28
+ 317 0013 E8000000 		call	___main
+ 317      00
+ 318 0018 C7042408 		mov	DWORD PTR [esp], 8
+ 318      000000
+ 319 001f E8000000 		call	__Znwj
+ 319      00
+ 320 0024 89C3     		mov	ebx, eax
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 7
+
+
+ 321 0026 C7000903 		mov	DWORD PTR [eax], 777
+ 321      0000
+ 322 002c C7400400 		mov	DWORD PTR [eax+4], 0
+ 322      000000
+ 323 0033 C7042408 		mov	DWORD PTR [esp], 8
+ 323      000000
+ 324 003a E8000000 		call	__Znwj
+ 324      00
+ 325 003f 89C6     		mov	esi, eax
+ 326 0041 C7004D01 		mov	DWORD PTR [eax], 333
+ 326      0000
+ 327 0047 895804   		mov	DWORD PTR [eax+4], ebx
+ 328 004a C7042408 		mov	DWORD PTR [esp], 8
+ 328      000000
+ 329 0051 E8000000 		call	__Znwj
+ 329      00
+ 330 0056 89C3     		mov	ebx, eax
+ 331 0058 C7009A02 		mov	DWORD PTR [eax], 666
+ 331      0000
+ 332 005e 897004   		mov	DWORD PTR [eax+4], esi
+ 333 0061 C7042408 		mov	DWORD PTR [esp], 8
+ 333      000000
+ 334 0068 E8000000 		call	__Znwj
+ 334      00
+ 335 006d 89C6     		mov	esi, eax
+ 336 006f C7004D01 		mov	DWORD PTR [eax], 333
+ 336      0000
+ 337 0075 895804   		mov	DWORD PTR [eax+4], ebx
+ 338 0078 89D8     		mov	eax, ebx
+ 339 007a B94D0100 		mov	ecx, 333
+ 339      00
+ 340 007f 31D2     		xor	edx, edx
+ 341 0081 EB05     		jmp	L68
+ 342              	L75:
+ 343 0083 8B08     		mov	ecx, DWORD PTR [eax]
+ 344 0085 8B4004   		mov	eax, DWORD PTR [eax+4]
+ 345              	L68:
+ 346 0088 81F94D01 		cmp	ecx, 333
+ 346      0000
+ 347 008e 0F94C1   		sete	cl
+ 348 0091 0FB6C9   		movzx	ecx, cl
+ 349 0094 01CA     		add	edx, ecx
+ 350 0096 85C0     		test	eax, eax
+ 351 0098 75E9     		jne	L75
+ 352 009a 891424   		mov	DWORD PTR [esp], edx
+ 353 009d B9000000 		mov	ecx, OFFSET FLAT:__ZSt4cout
+ 353      00
+ 354 00a2 E8000000 		call	__ZNSolsEi
+ 354      00
+ 355 00a7 83EC04   		sub	esp, 4
+ 356 00aa C7442404 		mov	DWORD PTR [esp+4], OFFSET FLAT:LC1
+ 356      03000000 
+ 357 00b2 890424   		mov	DWORD PTR [esp], eax
+ 358 00b5 E8000000 		call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+ 358      00
+ 359 00ba C7442404 		mov	DWORD PTR [esp+4], 777
+ 359      09030000 
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 8
+
+
+ 360 00c2 893424   		mov	DWORD PTR [esp], esi
+ 361 00c5 E8830000 		call	__Z14Eliminar_ValorP4NODOi
+ 361      00
+ 362 00ca C7442404 		mov	DWORD PTR [esp+4], 555
+ 362      2B020000 
+ 363 00d2 890424   		mov	DWORD PTR [esp], eax
+ 364 00d5 E8830000 		call	__Z14Eliminar_ValorP4NODOi
+ 364      00
+ 365 00da 89C3     		mov	ebx, eax
+ 366 00dc 890424   		mov	DWORD PTR [esp], eax
+ 367 00df E80A0000 		call	__Z13Mostrar_ListaP4NODO
+ 367      00
+ 368 00e4 85DB     		test	ebx, ebx
+ 369 00e6 7419     		je	L71
+ 370              	L72:
+ 371 00e8 8B7304   		mov	esi, DWORD PTR [ebx+4]
+ 372 00eb C7442404 		mov	DWORD PTR [esp+4], 8
+ 372      08000000 
+ 373 00f3 891C24   		mov	DWORD PTR [esp], ebx
+ 374 00f6 E8000000 		call	__ZdlPvj
+ 374      00
+ 375 00fb 89F3     		mov	ebx, esi
+ 376 00fd 85F6     		test	esi, esi
+ 377 00ff 75E7     		jne	L72
+ 378              	L71:
+ 379 0101 C7042400 		mov	DWORD PTR [esp], 0
+ 379      000000
+ 380 0108 E8000000 		call	_exit
+ 380      00
+ 381              		.cfi_endproc
+ 382              	LFE1475:
+ 383              		.def	__GLOBAL__sub_I__Z13Mostrar_ListaP4NODO;	.scl	3;	.type	32;	.endef
+ 384              	__GLOBAL__sub_I__Z13Mostrar_ListaP4NODO:
+ 385              	LFB1904:
+ 386              		.cfi_startproc
+ 387 010d 83EC1C   		sub	esp, 28
+ 388              		.cfi_def_cfa_offset 32
+ 389 0110 B9000000 		mov	ecx, OFFSET FLAT:__ZStL8__ioinit
+ 389      00
+ 390 0115 E8000000 		call	__ZNSt8ios_base4InitC1Ev
+ 390      00
+ 391 011a C7042400 		mov	DWORD PTR [esp], OFFSET FLAT:___tcf_0
+ 391      000000
+ 392 0121 E8000000 		call	_atexit
+ 392      00
+ 393 0126 83C41C   		add	esp, 28
+ 394              		.cfi_def_cfa_offset 4
+ 395 0129 C3       		ret
+ 396              		.cfi_endproc
+ 397              	LFE1904:
+ 398 012a 9090     		.section	.ctors,"w"
+ 399              		.align 4
+ 400 0000 0D010000 		.long	__GLOBAL__sub_I__Z13Mostrar_ListaP4NODO
+ 401              	.lcomm __ZStL8__ioinit,1,1
+ 402              		.ident	"GCC: (MinGW.org GCC-6.3.0-1) 6.3.0"
+ 403              		.def	__ZNSt8ios_base4InitD1Ev;	.scl	2;	.type	32;	.endef
+ 404              		.def	__ZNSolsEi;	.scl	2;	.type	32;	.endef
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 9
+
+
+ 405              		.def	__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i;	.scl	2;	.type
+ 406              		.def	__ZdlPvj;	.scl	2;	.type	32;	.endef
+ 407              		.def	__Znwj;	.scl	2;	.type	32;	.endef
+ 408              		.def	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc;	.scl	2;	.type	32;	.endef
+ 409              		.def	_exit;	.scl	2;	.type	32;	.endef
+ 410              		.def	__ZNSt8ios_base4InitC1Ev;	.scl	2;	.type	32;	.endef
+ 411              		.def	_atexit;	.scl	2;	.type	32;	.endef
+GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.cpp
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:5      .text:00000000 ___tcf_0
+                             .bss:00000000 __ZStL8__ioinit
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:18     .text:0000000a __Z13Mostrar_ListaP4NODO
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:55     .text:0000004c __Z13ELiminar_NodoP4NODOS0_
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:98     .text:00000083 __Z14Eliminar_ValorP4NODOi
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:188    .text:000000f7 __Z14Eliminar_ListaP4NODO
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:219    .text:00000123 __Z5LugarP4NODOi
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:248    .text:0000014c __Z11OcurrenciasP4NODOi
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:276    .text:0000016d __Z7AvanzarP4NODOi
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:300    .text.startup:00000000 _main
+C:\Users\ADMINI~1\AppData\Local\Temp\ccS9YQw7.s:384    .text.startup:0000010d __GLOBAL__sub_I__Z13Mostrar_ListaP4NODO
+
+UNDEFINED SYMBOLS
+__ZSt4cout
+___main
+__ZNSt8ios_base4InitD1Ev
+__ZNSolsEi
+__ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+__ZdlPvj
+__Znwj
+__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+_exit
+__ZNSt8ios_base4InitC1Ev
+_atexit
