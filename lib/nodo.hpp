@@ -1,7 +1,7 @@
 
 struct NODO {
 
-  int valor;
-  NODO* proximo = nullptr;
+  int   valor;
+  NODO* prox = nullptr;
 
 };

@@ -1,13 +1,22 @@
 # depslib dependency file v1.0
-1567772397 source:/home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/main.cpp
+1567774477 source:/home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/main.cpp
 	<iostream>
 	"./lib/nodo.hpp"
 	"./lib/agregar_frente.hpp"
 	"./lib/mostrar_lista.hpp"
+	"./lib/eliminar_nodo.hpp"
+	"./lib/eliminar_frente.hpp"
+	"./lib/eliminar_valor.hpp"
 
-1567771457 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/nodo.hpp
+1567774319 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/nodo.hpp
 
-1567771514 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/agregar_frente.hpp
+1567774326 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/agregar_frente.hpp
 
-1567772411 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/mostrar_lista.hpp
+1567774331 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/mostrar_lista.hpp
+
+1567774341 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/eliminar_nodo.hpp
+
+1567774989 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/eliminar_frente.hpp
+
+1567774991 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/eliminar_valor.hpp
 

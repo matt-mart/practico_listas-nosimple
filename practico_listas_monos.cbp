@@ -32,6 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="lib/agregar_frente.hpp" />
+		<Unit filename="lib/eliminar_frente.hpp" />
+		<Unit filename="lib/eliminar_nodo.hpp" />
+		<Unit filename="lib/eliminar_valor.hpp" />
+		<Unit filename="lib/mostrar_lista.hpp" />
+		<Unit filename="lib/nodo.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

@@ -6,7 +6,7 @@ NODO* Agregar_Frente (
   NODO* nuevo_nodo = new NODO;
 
   nuevo_nodo->valor = _valor;
-  nuevo_nodo->proximo = _raiz;
+  nuevo_nodo->prox  = _raiz;
 
   return nuevo_nodo;
 
