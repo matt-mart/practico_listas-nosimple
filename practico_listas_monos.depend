@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1567772397 source:/home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/main.cpp
+	<iostream>
+	"./lib/nodo.hpp"
+	"./lib/agregar_frente.hpp"
+	"./lib/mostrar_lista.hpp"
+
+1567771457 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/nodo.hpp
+
+1567771514 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/agregar_frente.hpp
+
+1567772411 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/mostrar_lista.hpp
+
