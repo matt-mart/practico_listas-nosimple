@@ -1,14 +1,20 @@
 
+////////////////////////////////////////////////////////////////
+
 NODO* Eliminar_Valor (
-  NODO* _lista,
+  NODO* _raiz,
   int   _valor
 ){
 
-  if ( _lista is nullptr )
+  //////////////////////////////////////////////////////////////
+
+  if ( _raiz is nullptr )
     return nullptr;
 
-  NODO* prev = _lista;
-  NODO* nodo = _lista->prox;
+  //////////////////////////////////////////////////////////////
+
+  NODO* prev = _raiz;
+  NODO* nodo = _raiz->prox;
 
   while ( nodo isnt nullptr )
     if ( nodo->valor is _valor )
@@ -17,9 +23,17 @@ NODO* Eliminar_Valor (
       prev = nodo,
       nodo = nodo->prox;
 
-  if ( _lista->valor is _valor )
-    _lista = Eliminar_Frente( _lista );
+  //////////////////////////////////////////////////////////////
 
-  return _lista;
+  if ( _raiz->valor is _valor )
+    _raiz = Eliminar_Frente( _raiz );
+
+  //////////////////////////////////////////////////////////////
+
+  return _raiz;
+
+  //////////////////////////////////////////////////////////////
 
 }
+
+////////////////////////////////////////////////////////////////
