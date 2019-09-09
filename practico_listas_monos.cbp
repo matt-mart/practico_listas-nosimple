@@ -39,6 +39,8 @@
 		<Unit filename="lib/eliminar_lista.hpp" />
 		<Unit filename="lib/eliminar_nodo.hpp" />
 		<Unit filename="lib/eliminar_valor.hpp" />
+		<Unit filename="lib/fondo.hpp" />
+		<Unit filename="lib/frente.hpp" />
 		<Unit filename="lib/lista_es_vacia.hpp" />
 		<Unit filename="lib/lugar.hpp" />
 		<Unit filename="lib/mostrar_lista.hpp" />

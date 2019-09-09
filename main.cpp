@@ -23,6 +23,8 @@
 #include "./lib/buscar.hpp"
 #include "./lib/ocurrencias.hpp"
 #include "./lib/avanzar.hpp"
+#include "./lib/frente.hpp"
+#include "./lib/fondo.hpp"
 
 /// frente
 /// fondo

@@ -20,3 +20,49 @@
 
 1567774991 /home/tecnologo/Escritorio/EDA_2019/practico_listas_monos/lib/eliminar_valor.hpp
 
+1568065364 source:c:\users\adminpc\desktop\eda\practico_listas-nosimple\main.cpp
+	<iostream>
+	<iso646.h>
+	"./lib/nodo.hpp"
+	"./lib/lista_es_vacia.hpp"
+	"./lib/agregar_frente.hpp"
+	"./lib/mostrar_lista.hpp"
+	"./lib/eliminar_nodo.hpp"
+	"./lib/eliminar_frente.hpp"
+	"./lib/eliminar_valor.hpp"
+	"./lib/eliminar_lista.hpp"
+	"./lib/lugar.hpp"
+	"./lib/buscar.hpp"
+	"./lib/ocurrencias.hpp"
+	"./lib/avanzar.hpp"
+	"./lib/frente.hpp"
+	"./lib/fondo.hpp"
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\nodo.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\lista_es_vacia.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\agregar_frente.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\mostrar_lista.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\eliminar_nodo.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\eliminar_frente.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\eliminar_valor.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\eliminar_lista.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\lugar.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\buscar.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\ocurrencias.hpp
+
+1568059768 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\avanzar.hpp
+
+1568065181 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\frente.hpp
+
+1568065337 c:\users\adminpc\desktop\eda\practico_listas-nosimple\lib\fondo.hpp
+
