@@ -25,9 +25,10 @@
 #include "./lib/avanzar.hpp"
 #include "./lib/frente.hpp"
 #include "./lib/fondo.hpp"
+#include "./lib/eliminar_fondo.hpp"
 
-/// frente
-/// fondo
+
+
 /// eliminar lugar
 /// eliminar fondo
 
@@ -54,16 +55,24 @@ int main(){
   raiz = Agregar_Frente( raiz, 333 );
   raiz = Agregar_Frente( raiz, 666 );
   raiz = Agregar_Frente( raiz, 333 );
+  raiz = Agregar_Frente( raiz, 555 );
+  raiz = Agregar_Frente( raiz, 111 );
+          Mostrar_Lista(raiz);
 
   std::cout
     << Ocurrencias(      raiz, 333 )
     << "\n";
 
-  raiz = Eliminar_Valor( raiz, 777 );
+    raiz = Eliminar_Valor( raiz, 777 );
+            Mostrar_Lista(raiz);
   raiz = Eliminar_Valor( raiz, 555 );
          Mostrar_Lista(  raiz );
-  raiz = Eliminar_Lista( raiz );
 
+
+  raiz = Eliminar_Fondo(raiz);
+         Mostrar_Lista(raiz);
+
+  raiz = Eliminar_Lista( raiz );
   //////////////////////////////////////////////////////////////
 
   exit( EXIT_SUCCESS );
